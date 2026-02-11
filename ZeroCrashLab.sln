@@ -1,9 +1,54 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36301.6 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_NullPointerDereference", "01_NullPointerDereference\01_NullPointerDereference.vcxproj", "{A1B2C3D4-1111-4000-A000-000000000001}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_UseAfterFree", "02_UseAfterFree\02_UseAfterFree.vcxproj", "{A1B2C3D4-2222-4000-A000-000000000002}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_IteratorInvalidation", "03_IteratorInvalidation\03_IteratorInvalidation.vcxproj", "{A1B2C3D4-3333-4000-A000-000000000003}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_MemoryLeak", "04_MemoryLeak\04_MemoryLeak.vcxproj", "{A1B2C3D4-4444-4000-A000-000000000004}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_DivisionByZero", "05_DivisionByZero\05_DivisionByZero.vcxproj", "{A1B2C3D4-5555-4000-A000-000000000005}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_UninitializedVariable", "06_UninitializedVariable\06_UninitializedVariable.vcxproj", "{A1B2C3D4-6666-4000-A000-000000000006}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_BufferOverflow", "07_BufferOverflow\07_BufferOverflow.vcxproj", "{A1B2C3D4-7777-4000-A000-000000000007}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_RaceCondition", "08_RaceCondition\08_RaceCondition.vcxproj", "{A1B2C3D4-8888-4000-A000-000000000008}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_UndefinedBehavior", "09_UndefinedBehavior\09_UndefinedBehavior.vcxproj", "{A1B2C3D4-9999-4000-A000-000000000009}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_LogicError", "10_LogicError\10_LogicError.vcxproj", "{A1B2C3D4-AAAA-4000-A000-00000000000A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B2C3D4-1111-4000-A000-000000000001}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-1111-4000-A000-000000000001}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-2222-4000-A000-000000000002}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-2222-4000-A000-000000000002}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-3333-4000-A000-000000000003}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-3333-4000-A000-000000000003}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-4444-4000-A000-000000000004}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-4444-4000-A000-000000000004}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-5555-4000-A000-000000000005}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-5555-4000-A000-000000000005}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-6666-4000-A000-000000000006}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-6666-4000-A000-000000000006}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-7777-4000-A000-000000000007}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-7777-4000-A000-000000000007}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-8888-4000-A000-000000000008}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-8888-4000-A000-000000000008}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-9999-4000-A000-000000000009}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-9999-4000-A000-000000000009}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-AAAA-4000-A000-00000000000A}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-AAAA-4000-A000-00000000000A}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
