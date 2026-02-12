@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_LogicError", "10_LogicEr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_ExceptionTypes", "11_ExceptionTypes\11_ExceptionTypes.vcxproj", "{A1B2C3D4-BBBB-4000-A000-00000000000B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_ExceptionHandling", "12_ExceptionHandling\12_ExceptionHandling.vcxproj", "{A1B2C3D4-CCCC-4000-A000-00000000000C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -52,6 +54,8 @@ Global
 		{A1B2C3D4-AAAA-4000-A000-00000000000A}.Debug|x64.Build.0 = Debug|x64
 		{A1B2C3D4-BBBB-4000-A000-00000000000B}.Debug|x64.ActiveCfg = Debug|x64
 		{A1B2C3D4-BBBB-4000-A000-00000000000B}.Debug|x64.Build.0 = Debug|x64
+		{A1B2C3D4-CCCC-4000-A000-00000000000C}.Debug|x64.ActiveCfg = Debug|x64
+		{A1B2C3D4-CCCC-4000-A000-00000000000C}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

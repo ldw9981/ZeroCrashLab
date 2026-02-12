@@ -23,5 +23,8 @@ Release/
 *.VC.opendb
 ipch/
 
+# Crash dumps
+*.dmp
+
 # Claude
 .claude/
