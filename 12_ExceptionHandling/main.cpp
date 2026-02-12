@@ -38,12 +38,27 @@
 // ============================================================================
 // 빌드 정보 전역 변수 (덤프에서 확인 가능)
 // ============================================================================
+// 방법 1: .pdb가 있으면 VS 조사식(Watch)에서 변수명으로 확인
+// 방법 2: .pdb가 없어도 바이너리 에디터(HxD 등)에서 "<<<BUILD_INFO>>>" 텍스트 검색
+//
 // #pragma optimize("", off)로 최적화 방지 → 덤프에서 반드시 살아있음
-// VS 디버거 조사식(Watch)에서 g_BuildGitRevision 등을 입력하면 확인 가능
 #pragma optimize("", off)
 volatile const char* g_BuildGitRevision = BUILD_GIT_REVISION;
 volatile const char* g_BuildGitBranch   = BUILD_GIT_BRANCH;
 volatile const char* g_BuildTimestamp   = BUILD_TIMESTAMP;
+
+// .pdb 없이도 덤프에서 빌드 정보를 찾을 수 있는 검색용 태그 문자열
+// HxD 등 바이너리 에디터에서 "<<<BUILD_INFO>>>" 로 검색하면 바로 찾을 수 있음
+extern "C" const char g_BuildTag[] =
+    "<<<BUILD_INFO>>> "
+    "Rev:" BUILD_GIT_REVISION " "
+    "Branch:" BUILD_GIT_BRANCH " "
+    "Date:" BUILD_GIT_DATE " "
+    "Built:" BUILD_TIMESTAMP " "
+    "<<<END_BUILD_INFO>>>";
+
+// 링커가 g_BuildTag를 제거하지 못하게 강제 포함
+#pragma comment(linker, "/include:g_BuildTag")
 #pragma optimize("", on)
 
 // ============================================================================
